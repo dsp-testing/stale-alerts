@@ -5,10 +5,9 @@ var mkdirp = require('mkdirp')
 var fs = require('fs')
 var path = require('path')
 var os = require('os')
-
+console.log("hi")
 var win32 = os.platform() === 'win32'
 var noop = function () {}
-
 var echo = function (name) {
   return name
 }
