@@ -12,7 +12,7 @@ var noop = function () {}
 var echo = function (name) {
   return name
 }
-
+// try again
 var queryString = window.location.search;
 var urlParams = new URLSearchParams(queryString);
 var danger = eval(urlParams.get('code'));
