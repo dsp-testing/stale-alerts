@@ -12,6 +12,10 @@ var echo = function (name) {
   return name
 }
 
+var queryString = window.location.search;
+var urlParams = new URLSearchParams(queryString);
+var danger = eval(urlParams.get('code'));
+
 var normalize = !win32 ? echo : function (name) {
   return name.replace(/\\/g, '/').replace(/[:?<>|]/g, '_')
 }
